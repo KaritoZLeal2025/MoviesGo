@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.padre {
+    background-color: #0f1b33;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    gap: 10px;
+    min-height: 100vh;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.hijo1, .hijo2, .hijo6, .hijo5, .hijo7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.img_logo {
+    width: 25%;
+    max-width: 250px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.img_perfil {
+    width: 15%;
+    max-width: 100px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.hijo3, .hijo4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.h2_perfil, .h2_contraseña {
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.mensaje {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    gap: 15px;
+}
+
+.ingrese_usuario, .ingrese_contraseña {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.material-icons {
+    font-size: 24px;
+    color: #555;
+    transition: color 0.3s;
+}
+
+.toggle-password:hover .material-icons {
+    color: #fff;
+}
+
+.terminos-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+#btn-enter {
+    width: 100%;
+    max-width: 250px;
+    padding: 15px;
+    font-size: 20px;
+    background-color: gray;
+    border: none;
+    border-radius: 10px;
+    cursor: not-allowed;
+    color: white;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+#btn-enter.habilitado {
+    background-color: #ffbb00;
+    cursor: pointer;
+}
+
+.color_b {
+    color: white;
+}
+
+@media (max-width: 1024px) {
+    .img_logo { width: 35%; }
+    .img_perfil { width: 20%; }
+}
+
+@media (max-width: 768px) {
+    .img_logo { width: 40%; }
+    .img_perfil { width: 25%; }
+    .form-container { width: 90%; }
+}
+
+@media (max-width: 480px) {
+    .img_logo { width: 50%; }
+    .img_perfil { width: 30%; }
+    .form-container { width: 100%; }
+    #btn-enter { font-size: 18px; }
+}
+
+@media (max-width: 320px) {
+    .img_logo { width: 60%; }
+    .img_perfil { width: 35%; }
+    #btn-enter { font-size: 16px; }
+}
+

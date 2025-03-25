@@ -1,0 +1,73 @@
+#body {
+    background-color: #0f1b33;
+    margin: 0;
+    padding: 0;
+}
+
+#logo11 {
+    width: 50%;
+    display: block;
+    margin: 2% auto;
+}
+
+#elogan {
+    text-align: center;
+    color: #ffbb00;
+    margin: 0 auto;
+    width: 80%;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1.2em;
+}
+
+
+#botones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    width: 40%;
+    max-width: 200px;
+    padding: 1em;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+}
+
+button:hover {
+    box-shadow: 0 0 10px #ffbb00;
+}
+
+h1 {
+    font-size: 1.5em;
+    color: #ffbb00;
+    font-family: Verdana, Geneva, sans-serif;
+    -webkit-text-stroke: 1px #0f1b33;
+}
+#comedia { background-image: url("celeste.jpeg"); background-size: cover;}
+#ROMANCE { background-image: url("rosado.jpeg"); background-size: cover; }
+#ACCION { background-image: url("rojo.jpeg"); background-size: cover; }
+#INFANTIL { background-image: url("verde.jpeg"); background-size: cover; }
+
+
+@media (max-width: 600px) {
+    #logo11 { width: 80%; }
+    #elogan { font-size: 1em; }
+    button { width: 80%; max-width: none; padding: 0.8em; }
+    h1 { font-size: 1.2em; }
+}
+
+@media (max-width: 400px) {
+    #elogan { font-size: 0.9em; }
+    h1 { font-size: 1em; }
+}
+
+@media (max-width: 300px) {
+    #logo11 { width: 90%; }
+    #elogan { font-size: 0.8em; width: 90%; }
+    button { width: 100%; }
+    h1 { font-size: 0.9em; }
+}

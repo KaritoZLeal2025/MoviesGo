@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Go</title>
+    <link rel="stylesheet" href="inicio.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <div class="padre">
+        <div class="hijo1">
+            <img src="moviego1.png" alt="logo" class="img_logo">
+        </div>
+        
+        <div class="hijo2">
+            <img src="perfil.png" alt="perfil" class="img_perfil">
+        </div>
+        
+        <div class="hijo3">
+            <div class="formulario">
+                <h2 class="h2_perfil">USERNAME</h2>
+                <input type="text" id="usuario1" placeholder="Write here..." oninput="verificarTexto('usuario1', 'mensaje1')" class="ingrese_usuario">
+                <p class="mensaje" id="mensaje1">There is no text</p>
+            </div>
+        </div>
+        
+        <div class="hijo4">
+            <div class="formulario">
+                <h2 class="h2_contraseña">PASSWORD</h2>
+                <div class="password-container">
+                    <input type="password" id="password" placeholder="Write here..." oninput="verificarTexto('password', 'mensaje2')" class="ingrese_contraseña">
+                    <button type="button" class="toggle-password" onclick="togglePassword()">
+                        <i class="material-icons" id="eye-icon">visibility</i>
+                    </button>
+                </div>
+                <p class="mensaje" id="mensaje2">There is no text</p>
+            </div>
+        </div>
+
+        <div class="hijo5">
+            <div class="terminos-container">
+                <input type="checkbox" id="aceptar" onchange="toggleBoton()">
+                <label for="aceptar">I accept the terms and conditions</label>
+            </div>
+        </div>
+
+        <div class="hijo6">
+            <button id="btn-enter" disabled > <a href="pagina_principal.html" class="color_b">ENTER</a></button>
+        </div>
+    </div>
+
+    <script src="inicio.js"></script>
+</body>
+</html>
+
